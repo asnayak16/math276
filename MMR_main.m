@@ -9,17 +9,17 @@
 % % %   Z =   | E |, dZ_dt = | -k_1*E*S + k_m1*C + k_2*C  |
 % % %         | C |          |  k_1*E*S - k_m1*C - k_2*C  |
 % % %         | P |          |  k_2*C                     |
-%%% Using the RK method
+%%% Using MATLAB's ode23s solver.
 %%% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 %% Initial Conditions
    % Rate Constants
-   k_1 = 1e3;   k_m1 = 1; k_2  = 0.05;
+   k_1 = 7.5;   k_m1 = 50; k_2  = 0.05;
 
    % Initial Concentrations
-   Z0 = [  0.8; 7.5e-5; 0 ; 0 ];
+   Z0 = [  0.008; 0.75; 0 ; 0 ];
    
    % Solver options
-   tspan = [0 25];
+   tspan = [0 100];
    ode_fn = @(t,Z) MMR_ode(t,Z,k_1,k_m1,k_2);    
 
 %% Solve
