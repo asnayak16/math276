@@ -1,5 +1,5 @@
 %% Michaelis-Menten Reactions ODE Solutions
-%%% Ashwin Nayak, asnayak(at)ucsd.edu, 25-Feb-2017
+%%% Ashwin Nayak, 25-Feb-2017
 %%% Written towards MATH276 HW3
 %%% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 %%% Solves the M-M Reactions,
